@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+    <link href="https://cdn.jsdeliver.net/npm/bootstrap@5.0.2/dis/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <h1 class="display-4 mb-4">Index page</h1>
+    <p th:text="${msg}"></p>
+    <div class="h6 alert alert-primary">
+        <form method="post" action=".">
+            <div class="my-2">
+                <input class="form-check-input" type="checkbox" name="check1" id="check1" />
+                <label class="frm-check-label" for="check1">Check</label>
+            </div>
+            <div class="my-2">
+                <input class="form-check-input" type="radio" name="radio1" id="radioA" value="male" />
+                <label class="frm-check-label" for="radioA">Male</label>
+            </div>
+            <div class="my-2">
+                <input class="form-check-input" type="radio" name="radio1" id="radioB" value="female" />
+                <label class="frm-check-label" for="radioB">Female</label>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>
